@@ -5,11 +5,6 @@ Avant de commencer
 apt-get update && apt-get upgrade
 ```
 
-En cas de besoin
-```
-su -l
-```
-
 
 # Apache
 
