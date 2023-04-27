@@ -138,14 +138,6 @@ ou
 apt policy mariadb-server
 ```
 
-## Commande SQL utiles
-
-```
-create database "NomDeBaseDeDonnée"; #Création de base de données
-show databases; #Visualiser les bases de données
-exit #Quitter MariaDB
-```
-
 ## Après un changement de configuration de MariaDB
 
 ```
@@ -260,3 +252,5 @@ En cas d'erreur MySQL
 ```
 apt-get install mysql
 ```
+
+## Installer l'extention "Stockage Microsoft Azure pour WordPress"
