@@ -47,63 +47,12 @@ systemctl restart apache2
 /etc/apache2/apache2.conf
 ```
 
-## Cacher la version de Apache
-```
-/etc/apache2/conf-enabled/security.conf
-```
-Il faut remplacer
-```
-ServerTokens os
-```
-par
-```
-ServerTokens Prod
-```
-puis
-```
-systemctl restart apache2
-```
-## Cacher le type de serveur web
-```
-/etc/apache2/apache2.conf
-```
-ou
-```
-/etc/apache2/conf-enabled/security.conf
-```
-Il faut remplacer
-```
-ServerSignature On
-```
-par
-```
-ServerSignature Off
-```
-puis
-```
-systemctl restart apache2
-```
-
 ## Fichier où déclarer les Virtual Hosts
 ```
 /etc/apache2/sites-available
 /etc/apache2/sites-enabled
 ```
-## Exemple de Virtual Hosts
-```
-<VirtualHost *:80>
-  ServerName www.domaine.local
-  ServerAlias domaine.local
-  DocumentRoot /var/www/domaine/html
-  ErrorLog /var/www/domaine/logs/error.log
-  CustomLog /var/www/domaine/logs/access.log combined
-</VirtualHost>
-```
 
-## Pour mettre en place une authentification basique avec htpasswd
-```
-apt-get install -y apache2-utils
-```
 # PHP
 
 ## Installation des dépendances
