@@ -109,3 +109,38 @@ systemctl restart apache2
 
 # Dolibarr
 
+## Pour installer Dolibarr nous aurront besoin de la commande git et unzip
+
+```
+apt install git -y && apt install unzip
+```
+
+puis on ce place dans le dossier source de apache
+
+```
+cd /var/www/html/
+```
+
+on télécharge le repertoire de Dolibarr
+
+```
+wget https://github.com/Dolibarr/dolibarr/archive/refs/tags/16.0.1.zip
+```
+
+on le dezip
+
+```
+unzip 16.0.1.zip
+```
+
+et on nettoie notre installation
+
+```
+mv dolibarr-16.0.1/dolibarr/
+```
+
+enfin on gere les permissions
+
+```
+chown -R www-data:www-data /var/www/html/dolibarr/
+```
