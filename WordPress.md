@@ -1,5 +1,3 @@
-# Linux Apache Mariadb Php
-
 Avant de commencer
 ```
 apt-get update && apt-get upgrade
