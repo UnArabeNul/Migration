@@ -1,6 +1,6 @@
 # Création de la passerelle de réseau virtuel
 
-### recherchez "Passerelles de réseau virtuel" dans "tous les services" :
+### Recherchez "Passerelles de réseau virtuel" dans "tous les services" :
 ![image](https://user-images.githubusercontent.com/120634098/236682270-47de2bc7-1ca8-4cd6-95d7-14a5bf8717ad.png)
 
 ### Choisissez "VPN" comme "Type de passerelle", puis "Basé sur itinéraires" comme "Type de VPN" :
